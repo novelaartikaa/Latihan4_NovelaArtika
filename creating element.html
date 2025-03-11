@@ -1,0 +1,27 @@
+<!-- No 11 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="div1"></div> 
+    <input type="text" id="inputText" placeholder="Masukkan teks judul">
+    <button onclick="tambahJudul()">Tambah Judul</button>
+
+    <script>
+        function tambahJudul() {
+            var div1 = document.getElementById('div1'); 
+            var judul = document.createElement('h1'); 
+            var inputText = document.getElementById('inputText').value; 
+
+            judul.textContent = inputText; 
+            div1.appendChild(judul); 
+        }
+    </script>
+
+</body>
+</html>
