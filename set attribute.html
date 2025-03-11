@@ -1,0 +1,24 @@
+<!-- No 12 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Gambar</title>
+</head>
+<body>
+
+    <input type="text" id="inputImg" placeholder="Masukkan URL gambar">
+    <button onclick="tambahGambar()">Tambah</button>
+    <div id="div1"></div>
+
+    <script>
+        function tambahGambar() {
+            var img = document.createElement('img'); 
+            img.src = document.getElementById('inputImg').value; 
+            document.getElementById('div1').appendChild(img); 
+        }
+    </script>
+
+</body>
+</html>
